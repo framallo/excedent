@@ -11,6 +11,7 @@ echo 'uh?'
 echo $PWD
 echo `export`
 
+
 echo 'set rvm'
 source /usr/local/rvm/scripts/rvm
 rvm use --create ree@excedent
