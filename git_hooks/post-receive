@@ -7,18 +7,17 @@ env -i git reset --hard
 env -i git submodule init
 env -i git submodule update
 
-echo $PWD
 echo 'set rvm'
-env -i rvm use --create ree@excedent
+source /usr/local/rvm/scripts/rvm
+rvm use --create ree@excedent
 
 echo 'deploy gems'
-env -i bundle install --deployment
+bundle install --deployment
 
 echo 'rake db:migrate'
-env -i RAILS_ENV=production rake db:migrate cache:build 
+RAILS_ENV=production rake db:migrate cache:build 
 
 echo 'restart server'
-env -i kill -HUP `cat tmp/pid/unicorn.pid`
-
+kill -HUP `cat tmp/pid/unicorn.pid`
 
 
