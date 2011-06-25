@@ -9,8 +9,8 @@ env -i git submodule init
 env -i git submodule update
 
 echo 'set rvm'
+source /usr/local/rvm/scripts/rvm
 rvm use --create ree@excedent
-
 
 echo 'deploy gems'
 bundle install --deployment
