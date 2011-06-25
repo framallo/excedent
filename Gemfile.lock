@@ -79,6 +79,7 @@ GEM
     unicorn (3.7.0)
       kgio (~> 2.3)
       rack
+    web-app-theme (0.6.3)
 
 PLATFORMS
   ruby
@@ -88,3 +89,4 @@ DEPENDENCIES
   rails (= 3.0.9)
   ruby-debug
   unicorn
+  web-app-theme (>= 0.6.2)

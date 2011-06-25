@@ -11,4 +11,5 @@ gem 'ruby-debug'
 
 group :development, :test do
   gem 'ruby-debug'
+  gem 'web-app-theme', '>= 0.6.2'
 end
