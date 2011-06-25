@@ -20,4 +20,3 @@ echo 'restart server'
 kill -HUP `cat tmp/pid/unicorn.pid`
 
 
-
