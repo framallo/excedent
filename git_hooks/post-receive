@@ -19,6 +19,6 @@ echo 'rake db:migrate'
 RAILS_ENV=production rake db:migrate cache:build 
 
 echo 'restart server'
-kill -HUP `cat tmp/pid/unicorn.pid`
+if [ -f tmp/pid/unicorn.pid]; kill -HUP `cat tmp/pid/unicorn.pid`
 
 
