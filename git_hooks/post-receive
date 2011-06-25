@@ -1,15 +1,11 @@
 #!/bin/sh
 cd ..
 
-
 echo 'checkout head'
-git reset --hard
+env -i git reset --hard
 
-git submodule init
-git submodule update
-
-echo 'pwd'
-echo `pwd`
+env -i git submodule init
+env -i git submodule update
 
 echo 'set rvm'
 source /usr/local/rvm/scripts/rvm
