@@ -2,10 +2,10 @@
 cd ..
 
 echo 'checkout head'
-env -i git reset --hard
+git reset --hard
 
-env -i git submodule init
-env -i git submodule update
+git submodule init
+git submodule update
 
 echo 'set rvm'
 source /usr/local/rvm/scripts/rvm
