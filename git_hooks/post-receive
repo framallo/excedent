@@ -7,6 +7,7 @@ env -i git reset --hard
 env -i git submodule init
 env -i git submodule update
 
+echo $PWD
 echo 'set rvm'
 env -i rvm use --create ree@excedent
 
