@@ -1,9 +1,9 @@
 #!/bin/sh
-cd ..
+
+cd $GIT_DIR
 
 echo 'checkout head'
-export GIT_DIR=''
-git reset --hard
+git-reset --hard HEAD
 
 git submodule init
 git submodule update
