@@ -1,17 +1,13 @@
-#!/bin/sh
-
-cd $GIT_DIR
+#!/bin/bash
+cd ..
 
 echo 'checkout head'
-git-reset --hard HEAD
+env -i git reset --hard
 
 git submodule init
 git submodule update
 
 echo 'uh?'
-echo $PWD
-echo `export`
-
 
 echo 'set rvm'
 source /usr/local/rvm/scripts/rvm
