@@ -3,6 +3,7 @@ cd ..
 
 echo 'checkout head'
 export GIT_DIR=''
+
 git reset --hard
 
 git submodule init
