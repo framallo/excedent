@@ -19,9 +19,8 @@ echo 'rake db:migrate'
 RAILS_ENV=production bundle exec rake db:migrate 
 
 echo 'restart server'
-if [ -f tmp/pids/unicorn.pid ]; then
-  kill -HUP `cat tmp/pids/unicorn.pid`
-fi
+kill -HUP `cat tmp/pids/unicorn.pid`
+
 
 
 
