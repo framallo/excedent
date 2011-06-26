@@ -12,10 +12,12 @@
           <li>
             <div class="left">
               <a href="#"><img class="avatar" src="/images/profilemissing.png" alt="avatar"></a>
-              <div class="price"><%= pluralize offer.price, offer.pricing_type %> </div>
+              <div class="price">
+                <%= pluralize offer.price, offer.pricing_type %> 
+              </div>
             </div>
             <div class="item">
-              <h3><%= link_to offer.title, offer %> </h3>
+              <h3> Se <%= offer.offer_type %>: <%= link_to offer.title, offer %> </h3>
               <p><%= markdown offer.description %></p>
             </div>
           </li>
