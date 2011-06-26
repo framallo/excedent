@@ -3,4 +3,6 @@
 //
 $(document).ready(function()	{
   $('.markitup').markItUp(markitUpSettings);
+  $( ".datepicker" ).datepicker();
+  
 });
