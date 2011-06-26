@@ -1,10 +1,4 @@
-.offers {
-  width:100%;
+.offers .edit {
+  float: right;
+  display: inline;
 }
-.offers div:last-child {
- border-bottom: none;
-}
-.offer {
- border-bottom: 1px solid #bbb;
-}
-  
