@@ -15,6 +15,9 @@ rvm use --create ree@excedent
 echo 'deploy gems'
 bundle install --deployment
 
+echo 'rm cached files'
+rm public/javascripts/all.js public/stylesheets/all.css 
+
 echo 'rake db:migrate'
 RAILS_ENV=production bundle exec rake db:migrate 
 
