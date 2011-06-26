@@ -12,3 +12,8 @@
 <p> <%= markdown @offer.description %> </p>
 
 
+<div class="quotes">
+  <%= render 'quotes' if @offer.offer_type.underscore =='ofrece' %>
+</div>
+
+

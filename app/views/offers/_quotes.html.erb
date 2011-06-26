@@ -1,0 +1,34 @@
+<% if @quotes && @quotes.size > 0 %>
+<div class="block" id="block-lists">
+  <div class="content">
+    <div class="inner">
+      <ul class="list offers">
+        <% @quotes.each do |quote| %>
+        <li>
+        <div class="left">
+          <a href="#"><img class="avatar" src="/images/profilemissing.png" alt="avatar"></a>
+          <div class="price">
+          </div>
+        </div>
+        <div class="item">
+          <p id="description"><%= markdown quote.description %></p>
+        </div>
+        </li>
+        <% end %>
+        <div class="clear"></div>
+      </ul>
+    </div>
+  </div>
+</div>
+<% end %> 
+
+<br />
+
+<div class="block" id="block-forms-2">
+  <div class="content">
+    <h2 class="title">Cotizar</h2>
+    <div class="inner">
+      <%= render 'quote_form' %>
+    </div>
+  </div>
+</div>

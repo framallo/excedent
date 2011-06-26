@@ -1,7 +1,9 @@
 class CreateQuotes < ActiveRecord::Migration
   def self.up
     create_table :quotes do |t|
-      t.string :description
+      t.integer :offer_id
+      t.text :description
+      t.string :user
 
       t.timestamps
     end

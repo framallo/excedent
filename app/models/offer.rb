@@ -7,6 +7,8 @@ class Offer < ActiveRecord::Base
     :conditions => " to_tsvector('english', title) @@ to_tsquery('english', '#{q}') "
   } }
 
+  has_many :quotes
+
   def initialize(attributes = nil)
     attributes ||= {}
     attributes[:starts_at] ||= DateTime.now.strftime("%m-%d-%Y")

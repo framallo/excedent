@@ -1,0 +1,15 @@
+<%= form_for(@quote,:url=>{:controller=>:quotes}, :html => { :class=>'form' }) do |f| %>
+<div class="group">
+  <%= f.label 'Descripcion', :class=> 'label' %>
+  <%= f.text_area :description, :class => 'markitup text_area', :rows=>'10',:cols=>'80' %>
+  <%= f.hidden_field :offer_id %>
+</div>
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_submit_tag 'web-app-theme/icons/tick.png' %> Enviar
+  </button>
+  <a href="#header" class="button">
+    <%= image_submit_tag 'web-app-theme/icons/cross.png' %> Cancelar
+  </a>
+</div>
+<% end%>
