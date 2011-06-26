@@ -16,10 +16,9 @@ echo 'deploy gems'
 bundle install --deployment
 
 echo 'rake db:migrate'
-RAILS_ENV=production rake db:migrate cache:build 
+RAILS_ENV=production bundle exec rake db:migrate cache:build 
 
 echo 'restart server'
 if [ -f tmp/pid/unicorn.pid]; kill -HUP `cat tmp/pid/unicorn.pid`
-
 
 
