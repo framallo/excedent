@@ -3,9 +3,9 @@
   <div class="content">
     <h2 class="title"></h2>
     <div class="inner">
-      <form action="#" method="get" class="search-box form">
+      <form action="/offers" method="get" class="search-box form">
         <div class="group">
-          <input type="text" class="text_field">
+          <%=text_field_tag 'q', params[:q], :class=>"text_field" %>
           <div class="subgroup">
             <%= select_tag 'type', options_for_select(['Buscadores', 'Oferentes']) %>
             <button class="button" type="submit"> Buscar </button>
