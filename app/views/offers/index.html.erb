@@ -18,7 +18,7 @@
             </div>
             <div class="item">
               <h3> Se <%= offer.offer_type %>: <%= link_to offer.title, offer %> </h3>
-              <p><%= markdown offer.description %></p>
+              <p id="description"><%= markdown offer.description %></p>
             </div>
           </li>
         <% end %>
