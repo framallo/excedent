@@ -28,6 +28,9 @@
 .search-box .subgroup {
   margin-top: 5px;
 }
+#content-holder {
+  min-height: 400px;
+}
 body {
   overflow-x: hidden;
 }  

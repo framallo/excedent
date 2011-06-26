@@ -40,7 +40,9 @@
         <% end -%>
       </div>
       <div id="main">
-        <%= yield %>
+        <div id="content-holder">
+          <%= yield %>
+        </div>
         <div id="footer">
           <div class="block">
             <p>Copyright &copy; <%= Time.now.year %> Xcdnt.</p>
