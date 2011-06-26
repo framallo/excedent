@@ -1,17 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h1>
-  <%= @offer.title %>
-</h1>
+<h1> <%= @offer.title %> </h1>
 
-<p>
-  <%= @offer.description %>
-</p>
+<div class="flash">
+  <div class="message notice">
+    <p> <%= pluralize @offer.price, @offer.pricing_type %> </p>
+  </div>
+</div>
 
-<p>
-  <b>Price:</b>
-  <%= pluralize @offer.price, @offer.pricing_type %>
-</p>
+
+<p> <%= markdown @offer.description %> </p>
+
 
 <%= link_to 'Edit', edit_offer_path(@offer) %> |
 <%= link_to 'Back', offers_path %>

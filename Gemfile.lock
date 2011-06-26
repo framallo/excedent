@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    RedCloth (4.2.7)
     abstract (1.0.0)
     actionmailer (3.0.9)
       actionpack (= 3.0.9)
@@ -29,10 +30,15 @@ GEM
       activesupport (= 3.0.9)
     activesupport (3.0.9)
     arel (2.0.10)
+    bluecloth (2.1.0)
     builder (2.1.2)
     columnize (0.3.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    formatize (1.0.1)
+      RedCloth (~> 4.2)
+      actionpack (~> 3.0)
+      bluecloth (~> 2.0)
     i18n (0.5.0)
     kgio (2.5.0)
     linecache (0.46)
@@ -85,6 +91,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  formatize
   pg
   rails (= 3.0.9)
   ruby-debug

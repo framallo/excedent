@@ -5,7 +5,7 @@
 
 <div class="block" id="block-lists">
   <div class="content">
-    <h2 class="title">Lists</h2>
+    <h2 class="title">Ofertas</h2>
     <div class="inner">
       <ul class="list offers">
         <% @offers.each do |offer| %>
@@ -17,7 +17,7 @@
             <div class="item">
               <div class="edit"><%= link_to '(Editar)', edit_offer_path(offer) %></div>
               <h3><%= link_to offer.title, offer %> </h3>
-              <p><%= offer.description %></p>
+              <p><%= markdown offer.description %></p>
             </div>
           </li>
         <% end %>
