@@ -5,3 +5,12 @@
 #container #main {
   min-height: 300px;
 }
+.markItUp {
+  width: 100%
+}
+.form .price #offer_price {
+  width: 10%
+}
+.form .price #offer_pricing_type {
+}
+
