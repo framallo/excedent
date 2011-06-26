@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Starts at:</b>
+  <%= @offer.starts_at %>
+</p>
+
+<p>
+  <b>Ends at:</b>
+  <%= @offer.ends_at %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @offer.price %>
+</p>
+
+<p>
+  <b>Pricing type:</b>
+  <%= @offer.pricing_type %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @offer.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @offer.description %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @offer.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @offer.updated_at %>
+</p>
+
+<p>
+  <b>Likes count:</b>
+  <%= @offer.likes_count %>
+</p>
+
+<p>
+  <b>Buy now count:</b>
+  <%= @offer.buy_now_count %>
+</p>
+
+<p>
+  <b>Is visible:</b>
+  <%= @offer.is_visible %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @offer.lat %>
+</p>
+
+<p>
+  <b>Lng:</b>
+  <%= @offer.lng %>
+</p>
+
+<p>
+  <b>Featured:</b>
+  <%= @offer.featured %>
+</p>
+
+<p>
+  <b>Pictures count:</b>
+  <%= @offer.pictures_count %>
+</p>
+
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>
