@@ -3,7 +3,7 @@
 <h1> <%= link_to @offer.title, edit_offer_path(@offer) %> </h1>
 
 <div class="flash">
-  <div class="message notice">
+  <div class="message error">
     <p> <%= pluralize @offer.price, @offer.pricing_type %> </p>
   </div>
 </div>
