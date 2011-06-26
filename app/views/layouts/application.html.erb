@@ -10,7 +10,10 @@
 <body>
   <div id="container">
     <div id="header">
-      <h1><a href="/">Xednt</a></h1>
+      <h1>
+        <%= image_tag 'logo.png', :id =>'xednt_logo' %> 
+        <a href="/">Xcdnt</a>
+      </h1>
       <div id="user-navigation">
         <ul class="wat-cf">
           <li><a href="#"><%= t("web-app-theme.profile", :default => "Profile") %></a></li>
@@ -18,9 +21,16 @@
           <li><a href="/logout" class="logout"><%= t("web-app-theme.logout", :default => "Logout") %></a></li>
         </ul>
       </div>
+
       <div id="main-navigation">
-        <ul class="wat-cf"></ul>
+        <ul class="wat-cf">
+          <li class="first"><a href="#block-text">Main Page</a></li>
+          <li class="active"><a href="#block-text">Active</a></li>
+          <li><a href="#block-login">Login</a></li>
+          <li><a href="#block-signup">Signup</a></li>
+        </ul>
       </div>
+
     </div>    
     <div id="wrapper" class="wat-cf">
       <div class="flash">
@@ -34,7 +44,7 @@
         <%= yield %>
         <div id="footer">
           <div class="block">
-            <p>Copyright &copy; <%= Time.now.year %> Xednt.</p>
+            <p>Copyright &copy; <%= Time.now.year %> Xcdnt.</p>
           </div>      
         </div>
       </div>
