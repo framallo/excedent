@@ -22,3 +22,4 @@ echo 'restart server'
 if [ -f tmp/pid/unicorn.pid]; kill -HUP `cat tmp/pid/unicorn.pid`
 
 
+
