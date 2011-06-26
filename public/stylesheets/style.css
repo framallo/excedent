@@ -16,4 +16,11 @@
 #xednt_logo{
   height:50px;
 }
-
+#main-navigation {
+  position: absolute;
+  left: 200px;
+  top: 45px;
+}
+body {
+  overflow-x: hidden;
+}  
