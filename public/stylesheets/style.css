@@ -21,6 +21,13 @@
   left: 200px;
   top: 45px;
 }
+.search-box select {
+  float:left;
+  margin: 8px 15px 0px 0px;
+}
+.search-box .subgroup {
+  margin-top: 5px;
+}
 body {
   overflow-x: hidden;
 }  

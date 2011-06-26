@@ -3,15 +3,14 @@
   <div class="content">
     <h2 class="title"></h2>
     <div class="inner">
-      <form action="#" method="get" class="form">
+      <form action="#" method="get" class="search-box form">
         <div class="group">
-        </div>
-        <div class="group">
-          <%= select_tag 'type', options_for_select(['Buscadores', 'Oferentes']) %>
           <input type="text" class="text_field">
-          <button class="button" type="submit"> Buscar </button>
-          <div class='clear'></div>
-        </div>
+          <div class="subgroup">
+            <%= select_tag 'type', options_for_select(['Buscadores', 'Oferentes']) %>
+            <button class="button" type="submit"> Buscar </button>
+            <div class='clear'></div>
+          </div>
       </form>
     </div>
   </div>
