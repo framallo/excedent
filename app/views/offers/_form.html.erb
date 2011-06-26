@@ -13,6 +13,11 @@
 <% end %>
 
 <div class="group">
+  <%= f.label 'Se', :class=> 'label' %>
+  <%= f.select :offer_type, Offer.offer_types.map {|t| t.humanize} %>
+</div>
+
+<div class="group">
   <%= f.label 'Nombre', :class=> 'label' %>
   <%= f.text_field :title, :class=> 'text_field' %>
 </div>
@@ -22,10 +27,9 @@
 </div>
 
 <div class="group price">
-  <%= f.label 'Precio', :class=> 'label' %>
+  <%= f.label 'Cantidad', :class=> 'label' %>
   <%= f.text_field :price, :class=> 'text_field' %>
-  <%= f.select :pricing_type, Offer.pricing_types %>
-
+  <%= f.select :pricing_type, Offer.pricing_types.map {|t| t.humanize} %>
 </div>
 <div class="group">
 </div>
