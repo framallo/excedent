@@ -1,11 +1,12 @@
 <h1>Listado de ofertas</h1>
 
 <div class="offers">
-
 <% @offers.each do |offer| %>
-<div class="title"><%= link_to offer.title, offer %></div>
-<div class="price"><%= pluralize offer.price, offer.pricing_type %> </div>
-<%= link_to 'Editar', edit_offer_path(offer) %>
+<div class="offer">
+  <div class="title"><%= link_to offer.title, offer %></div>
+  <div class="price"><%= pluralize offer.price, offer.pricing_type %> </div>
+  <%= link_to 'Editar', edit_offer_path(offer) %>
+</div>
 <% end %>
 </div>
 
