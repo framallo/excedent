@@ -2,7 +2,11 @@ class OffersController < ApplicationController
   # GET /offers
   # GET /offers.xml
   def index
-    @offers = Offer.all
+    if params[:q]
+      @offers = Offer.smart_find(params[:q])
+    else
+      @offers = Offer.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
